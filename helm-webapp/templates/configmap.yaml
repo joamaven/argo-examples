@@ -1,8 +1,9 @@
-kind: ConfigMap
 apiVersion: v1
+kind: ConfigMap
 metadata:
   name: {{ .Values.configmap.name }}
 data:
-  BG_COLOR: '#FF0000' # Red background color
-  FONT_COLOR: '#FFFFFF' # White font color
+  BG_COLOR: '#0000FF' # Blue background color
+  FONT_COLOR: '#FFFF00' # Yellow font color
   CUSTOM_HEADER: {{ .Values.configmap.data.CUSTOM_HEADER }}
+
